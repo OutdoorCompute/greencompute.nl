@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>OCDC B.V. - Puts waste to work</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="assets/thirdparty/asciinema-player.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/">OCDC B.V.</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/green-datacenter-bonds">Green DataCenter Bonds</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about-us">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/plan-meeting">Plan meeting</a></li>
+                        <!--<li class="nav-item"><hr class="dropdow-divider"></hr></li>
+                        <li class="nav-item"><a class="nav-link" href="/journey">Our Journey</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/faq#security">Security</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/howto">HowTo</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">OutdoorCompute's Blog</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">We have a lot to share!</p>
+                        <a class="btn btn-primary btn-xl" href="#yourney">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="page-section" id="yourney">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Blog</h2>
+								<p>This is the place where we write short blog posts to share our enthusiasm about topics that might also be interesting to you.</p>
+                <hr class="divider" />
+
+                <div class="row gx-4 gx-lg-5">
+                  <div class="container text-center pt-3">
+                    <figure>
+                      <img class="img-fluid" src="assets/images/blog-post-flops.png" alt="..." />
+                    </figure>
+                    <h2>2024 March 27 - How many FLOPS does a Cloud Unit has?</h2>
+                  </div>
+
+									<h5>What are FLOPS?</h5>
+									<p>FLOPS is a measure used to quantify the performance of a computer's ability to perform floating-point calculations. FLOPS helps in evaluating and comparing the computational power of processors, supercomputers, and entire computing systems. Higher FLOPS ratings indicate a system's greater capacity to handle complex mathematical calculations, making it a crucial benchmark in the advancement of computing technology.</p>
+									<p>FLOPS Prefixes:</p>
+									<ul>
+									<li>1 ExaFLOPS = 1,000,000,000 GigaFLOPS</li>
+									<li>1 PetaFLOPS = 1,000,000 GigaFLOPS</li>
+									<li>1 TeraFLOPS = 1,000 GigaFLOPS</li>
+									</ul>
+									<h5>Are FLOPS useful?</h5>
+									<p>The FLOPS metric can only be reliably used to compare CPU performance if the same method is used to determine the FLOPS. FLOPS only measures a specific set of operations and more metrics like random string sorting, data encryption, compression, sequential or random I/O are needed to get a clear picture of CPU and server performance. The server performance depends on many factors like type of workload, cluster architecture, cache size, memory bandwidth and CPU features. But FLOPS can be useful to get a rough indication of the CPU's processing power.</p>
+									<p>OutdoorCompute focuses on Power Usage Effectiveness and Energy Reuse Effectiveness. That is why the number of FLOPS <strong>per watt</strong> is a useful metric for us, to get a rough indication of the power effectiveness.</p>
+									<h5>Are all FLOPS the same?</h5>
+									<p>No, you need to be very careful when comparing CPUs by the number of FLOPS. For example, the IEEE 754 standard uses the single-precision (32-bits) or the double-precision floating points. Depending on which method is used the FLOPS metric can differ a lot. Only the result of the same benchmark tool can used to compare CPUs.</p>
+									<p>Let us get the FLOPS for the AMD EPYC 7313 from different sources:</p>
+									<ul>
+									<li>Microway.com rates the theoretical Peak Performance in FLOPS on 750 GigaFLOPS (double-precision 64-bit).</li>
+									<li>CPUBenchmark.net has collected 19 benchmarks and assigns 82 GigaFLOPS.</li>
+									</ul>
+									<p>For the Microway.com I could not find the formulas how they calculated the FLOPS but the Benchmark.net uses the following method to benchmark the FLOPS for a CPU:</p>
+									<p>"The Floating Point Math Test performs the same operations as the Integer Maths Test however with floating point numbers, using an equal amount of single precision (32-bit) and double precision (64-bit) values. A floating point number is a number with a fractional part (i.e. 12.568). These kinds of numbers are handled quite differently in the CPU compared to Integer numbers as well as being quite commonly used, therefore they are tested separately. This tests uses memory buffers totaling about 240kb per core and uses an instruction mix of 30% addition, 30% subtraction, 30% multiplication and 10% division."</p>
+									<p class="small text-muted">The FLOPS capability of GPUs is considerably more elevated compared to CPUs, but it's essential to understand that these metrics are not directly comparable due to the fundamentally different use cases each serves.</p>
+									<h5>Supercomputers</h5>
+									<p>To get an idea of the FLOPS range, supercomputers are now able to process more than 1 ExaFLOPS which is equal to 1,000 PetaFLOPS. This is not achieved by a single server but thousands of high performance servers. For example the Frontier cluster has over 8 thousand 64-core EPYC 64C processors in its cluster resulting in a performance of 1,194 PetaFLOPS.</p>
+
+									<figure>
+										<img class="img-fluid" src="assets/images/supercomputer-flops.png" alt="..." />
+										<figcaption class="figure-caption">Rapid growth of supercomputer performance, based on data from the top500.org website. The logarithmic y-axis shows performance in GigaFLOPS. Source: <a href="https://en.wikipedia.org/wiki/TOP500" target="_blank">Wiki TOP500</a></figcaption>
+									</figure>
+
+
+									<h5>Servers</h5>
+									<p>The key insight from this section is that choosing the best CPU for the Cloud Unit hinges on a variety of considerations. These include initial purchase and ongoing variable costs, efficiency metrics such as FLOPS per Watt, and reliability. Although newer CPU generations offer enhanced efficiency, they also tend to incur substantially higher costs per FLOP.</p>
+
+									<p>The Snellius supercomputer of the Netherlands (8.2 PetaFLOPS) uses mainly the AMD EPYC 9654 and 7H12 CPUs in its cluster. For the compute flavored Cloud Unit we use the lower count core CPUs like the AMD EPYC 7313P because it is most suitable for Function as a Service (FaaS) workloads at this moment. But for specific customer use-cases we will determine the optimal CPU to use.</p>
+
+									<p> Lets compare using the CPUbenchmark.nl FLOPS metrics:</p>
+
+									<pre>
+										<code>
+Generation                 CPU cores   GigaFLOPS   TDP     Number of servers   Total TeraFLOPS     GigaFLOPS/Watt
+AMD EPYC 9654  4e (2022)   96          ~488        360W    7                   3.42                1.36
+AMD EPYC 7763  3e (2020)   64          ~293        280W    9                   2.64                1.06
+AMD EPYC 7H12  2e (2018)   64          ~238        280W    9                   2.14                0.84
+AMD EPYC 7313P 3e (2020)   16          ~80         155W    16                  2.35                0.94
+AMD EPYC 7282  3e (2019)   16          ~58         155W    20                  1.16                0.94
+                    </code>
+                  </pre>
+
+                  <p>And the Microway.com FLOPS metrics (theoretical):</p>
+                  <pre>
+                  <code>
+Generation                 CPU cores   GigaFLOPS   TDP     Number of servers   Total TeraFLOPS     GigaFLOPS/Watt
+AMD EPYC 7763  3e (2020)   64          ~2500       280W    9                   22.5                9.00
+AMD EPYC 7313P 3e (2020)   16          ~800        155W    16                  12.8                5.12
+AMD EPYC 7282  2e (2019)   16          ~750        120W    20                  15.0                6.00
+                  </code></pre>
+
+                  <p>Costs of servers in the Cloud Unit:</p>
+                  <pre><code>
+                    CORES    Number of servers   CPU cost    Total CPU cost
+AMD EPYC 9654       96       7                   $6,690.-    $50,830.-
+AMD EPYC 7763       64       9                   $2,494.-    $22,446.-
+AMD EPYC 7H12       64       9                   $3,719.-    $33,471.-
+AMD EPYC 7313P      16       16                    $900.-    $14,400.-
+									</code></pre>
+
+									<ul>
+										<li class="small text-muted">Number of servers is based on the maximum power consumption of 5kW per Cloud Unit.</li>
+									</ul>
+
+									<h6>Latest CPU generation</h6>
+									<p>The latest generation of CPUs have a higher FLOPS/Watt due to new innovations regarding the microarchitecture and production process. For example the Zen 4 microarchitecture can execute 18% more instructions per clock cycle compared to the Zen 3 microarchitecture.</p>
+									<p>Using the latest CPU architecture will lower the variable expenses but increase the initial investment. This could make sense depending on the investment horizon. And financial compensation for providing heat.</p>
+
+									<h6>Higher or lower number of CPU cores?</h6>
+									<p>The CPU core systems with a high amount of cores (64) have around ~10% more FLOPS per Watt, but require a significant initial investment. And other metrics that where out of scope in this blog post like storage I/O, RAM bandwidth will be much better performing on lower core count CPUs.</p>
+									<p>The higher amount of cores also means that the Thermal Design Power (TDP) will higher. ~400 Watt for 96 core and ~200W for a 16 core CPU. But that is not an issue because we use liquid immersion cooling, the Cloud Unit can support a TDP up to 1000 Watt. The improved heat transfer rate that is caused by this cooling method could boost the performance of the CPUs with +30% (AMD EPYC core performance boost).</p>
+									<p>Last major point is reliability. Higher core count per CPU means that for the same amount of FLOPS less servers are needed. Which means that if 1 server fails a large part of the compute power will not be available (96 core = 20%, 16 core = 6.25%). That is why for the Function as a Service (FaaS) use-case which executes many small tasks we use a CPU with a lower core count.</p>
+
+									<h5>Conclusion</h5>
+									<p>We can install any type and amount of CPUs into the Cloud Unit as long as the total amount of power is within the maximum power specification of 5KW. In general, installing the most powerful and latest CPUs will increase the amount of FLOPS with ~20%. But will have a major impact on the initial investment and could have a negative impact on the overall performance (depending on the use-case).</p>
+									<p>So now we can answer the question, how many TeraFLOPS does the Cloud Unit has? Again it depends on the benchmark tool or method used to determine the FLOPS:</p>
+									<ul>
+                    <li><strong>Microway.com</strong>: One Cloud Unit can house 7x AMD EPYC 9654 and will produce 22.5 TeraFLOPS.</li>
+                    <li><strong>CPUbenchmark.nl</strong>: One Cloud Unit can house 7x AMD EPYC 9654 and will produce 3.4 TeraFLOPS.</li>
+									</ul>
+
+                  <p class="small text-muted">Excluding the core performance boost by using liquid immersion cooling.</p>
+									
+									<p>You can apply the same calculation method to determine the FLOPS using other benchmark tools or methods:</p>
+
+									<ul>
+                    <li><strong>FLOPS per Cloud Unit</strong> = 5000W/((2*TDP) * FLOPS per CPU) + 12%</li>
+                    <li><strong>FLOPS/Watt per Cloud Unit</strong> = (5000W/((2*TDP) * FLOPS per CPU) + 12%) / (TDP * (5000W/((2*TDP))</li>
+									</ul>
+
+									<p class="small text-muted">+12% is the assumed AMD Core Performance Boost due immersion cooling.</p>
+
+									<h5>Feedback & Questions:</h5>
+
+                  <p>Did you found a mistake, have another opinion or want to talk about the capabilities of the Cloud Unit? Please contact me at nick@outdoorcompute.nl.</p>
+									
+									<h5>Sources:</h5>
+									<ul>
+									<li><a href="https://en.wikipedia.org/wiki/TOP500">TOP500 supercomputers</a></li>
+									<li><a href="https://en.wikipedia.org/wiki/Computer_performance_by_orders_of_magnitude#Zettascale_computing_(1021)">Zettascale_computing</a></li>
+									<li><a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius+hardware">Snellius Hardware Specifications</a></li>
+									<li><a href="https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+7313&amp;id=4443">EPYC 7313 cpubenchmark.net</a></li>
+									<li><a href="https://www.microway.com/knowledge-center-articles/detailed-specifications-of-the-amd-epyc-milan-cpus/">Microway AMD FLOPS</a></li>
+									<li><a href="https://www.grcooling.com/wp-content/uploads/grc_future_of_immersion_cooling_white_paper.pdf">GRCooling whitepaper</a></li>
+									</ul>
+
+                </div>
+
+                <div class="row gx-4 gx-lg-5">
+                  <hr class="divider" /> 
+                </div>
+
+                <div class="row gx-4 gx-lg-5">
+                  <div class="container text-center pt-3">
+                    <figure>
+                      <img class="img-fluid" src="assets/images/ipcei.jpg" alt="..." />
+                    </figure>
+                    <h2>2024 March 08 - Edge computing trend</h2>
+                  </div>
+                  <h5>History Edge Computing</h5>
+                  <p><strong>Edge computing</strong>, a concept originating in the 1990s, aims to bring computing closer to end-users. Initially utilized as Content Delivery Networks to reduce network transit and load times for videos and websites.</p>
+
+                  <p>The term <strong>Cloudlets</strong> was coined around 2009, focus primarily on addressing latency issues. Traditionally, apps or websites run on devices connected to distant powerful clouds containing data and processing power. However in "fog computing", many cloudlets are deployed within the same region, extending the cloud and bringing it closer to the end-user, enhancing the responsiveness of apps and website. Technologies requiring real-time low-latency, such as 5G, Industry 4.0, augmented reality, and IoT, significantly benefit from cloudlets.</p>
+
+                  <p><strong>Modular Integrated Sustainable Data Centers</strong> (MISD, coined 2023) share similarities with cloudlets but emphasize sustainability. They incorporate elements such as heat reuse, electricity net dynamics, and efficient distributed computing.</p>
+
+                  <h5>Current and future challenges</h5>
+                  <p>The strain on electricity grid is increasing due to ongoing electrification, while the demand for cloud services is growing rapidly. Concurrently, the shift towards sustainability and a circular economy presents already significant challenges. These trends have a positive effect on our society and the environment but present major challenges.</p>
+
+                  <p>Nonetheless, it's inspiring to witness the variety of solutions emerging, for example high-density energy storage, novel solar panels, heat isolation techniques, smart systems, recycling initiatives, and innovative heat extraction mechanisms. Enumerating all researchers and organizations in this blog post would be exhaustive and will require a separate blog post.</p>
+
+                  <h5>Solution in cloud industry </h5>
+                  <p>To address these challenges in the cloud industry, smart and efficient systems are imperative. Numerous researchers and innovative organizations are developing solutions, each with its unique approach. To accelerate innovation in MISD-related solutions, the European Union has invested 1.2 billion euros in research support.</p>
+
+                  <p>We firmly believe that our society will inevitably transition to full sustainability and circularity. Our <strong>Cloud Unit</strong> represents a significant stride towards making the cloud industry not only sustainable but also environmentally friendly. It goes beyond being just a Modular Integrated Sustainable Data Center; we offer a comprehensive Cloud Service compatible with most cloud providers. By instantly converting existing cloud environments into sustainable and cost-effective ones, we are pioneering a shift towards a greener cloud ecosystem.</p>
+
+                  <p>We envision a world where the cloud seamlessly integrates into society, creating value for businesses by reducing cloud costs and enabling consumers to directly reuse waste heat. Furthermore, we invite everyone to invest in our expanding cloud network of Cloud Units, contributing to a more sustainable future for all.</p>
+
+                  <div class="container text-center pt-3 pb-3">
+                    <figure>
+                      <img class="img-fluid" src="assets/images/oc-diagram.png" alt="..." />
+                    </figure>
+                  </div>
+
+                  <ul>
+                    <li><a target="_blank" href="https://www.clouded.tv/">Consequence of cloud (HPE)</a></li>
+                    <li><a target="_blank" href="https://www.utwente.nl/en/eemcs/dacs/news/2024/1/1315022/the-modular-integrated-sustainable-datacenter-project-misd-project-receives-funding-for-5-years-under-the-european-ipcei-cis-program">MISD project EU, TU Twente</a></li>
+                    <li><a target="_blank" href="https://netztransparenz.tennet.eu/nl/elektriciteitsmarkt/nederlandse-markt/transportcapaciteit/">TenneT electricity grid</a></li>
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Cloudlet">See the sources at the bottom of cloudlet wikipedia page</a></li>
+                  </ul>
+
+                </div>
+
+                <div class="row gx-4 gx-lg-5">
+                  <hr class="divider" /> 
+                </div>
+
+              </div>
+            </div>
+        </section>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2024 - OCDC B.V.</div></div>
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Chamber of Commerce: 92708277</div></div>
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Ganker 6, Benningbroek</div></div>
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">The Netherlands</div></div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="assets/thirdparty/asciinema-player.min.js"></script>
+    </body>
+</html>

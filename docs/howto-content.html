@@ -1,0 +1,95 @@
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">HowTo</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Let us know if you have any questions. We can help integrade or provide custom solution to connect with your systems.</p>
+                        <a class="btn btn-primary btn-xl" href="#software">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="page-section" id="software">
+            <div class="container px-4 px-lg-5">
+
+
+                <h2 class="text-center mt-0">HowTo</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+									<h2>Integration with cloud service</h2>
+                  <p>On this page we present some commands and a demonstration. The main purpose is to get a general idea of the workflow. Our git repository will contain the most up-to-date manual and examples. The commandline utility that we use in this demo is just a wrapper around CURL. So anything the utility does can also be accomplished with other languages like .NET, Python etc.</p>
+
+									<h3>Azure ServiceBus Queue</h3>
+                  <p>Do you want to tryout this configuration then we provide a seperate Azure Account for you to test the solution without impacting your current Azure environment.</p>
+									<h4>1. Information Azure environment</h4>
+                  <p>
+                  Assuming you are working on a Linux environment, otherwise use the appropriate method to install the Azure CLI tool.
+                 
+                  <pre>
+# 1. Install the Azure CLI tools
+apt-get install azure-cli
+
+# 2. Use the credentials we provided.
+az login
+
+# 3. You might want information about the ServiceBus Queue
+az servicebus queue show --name queue01 --namespace-name customer-customer01-namespace01
+
+# 4. Or more information about the ServiceBus Queue endpoints:
+az servicebus namespace authorization-rule list --namespace-name customer-customer01-namespace01
+az servicebus namespace authorization-rule keys list --namespace-name customer-customer01-namespace01 --name RootManageSharedAccessKey
+                  </pre>
+                  </p>
+									<h4>2. Run Azure Function Runtime on the Cloud Unit</h4>
+                  <p>
+                  <pre>
+# 1. Create environment eg.: customer1
+./ocapi -p -t customer1 -a init -g 34.245.31.199 -u tokens/default_user.txt -l ~/.ssh/id_rsa.pub -f artifacts/bootstrap_python3_azure_function_app.sh
+
+# 2. Start new Instances (containers) in the Cloud Unit
+./ocapi -p -t customer1 -a run -f data_templates/run_azure_function_app.json -s payloads/azure_service_bus_queue.py -j 'app.servicebus_connection_str=""'
+
+# 3. Access Cloud Unit storage                  
+./ocapi -t customer1 -a list_files
+./ocapi -t customer1 -a get_file -o - -i FILE_ID
+                  </pre>
+
+									<h4>3. Sending to the Azure ServiceBus Queue</h4>
+                  <p>
+                  <pre>
+# 1. Install Python3 Azure module                  
+apt-get install python3-azure
+
+# 2. Use Python script to send item to Azure ServiceBus Queue
+cd snippets/azure
+python3 send_queue.py https://outdoorcompute.nl
+                  </pre>
+                  </p>
+
+									<h4>4. Demo</h4>
+                    <div id="demo"></div>
+                    <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                        AsciinemaPlayer.create('assets/artifacts/20240304-azure_demo.rec', document.getElementById('demo'), {
+                          poster: "npt:0:10",
+                          markers: [
+                             [0.0,   "README.md"],
+                             [35.0,  "Initialize Cloud Unit environment"],
+                             [47.0,  "Get Azure ServiceBus Endpoint"],
+                             [63.0,  "Deploy instance on Cloud Unit"],
+                             [78.0,  "Send URL to Azure ServiceBus Queue"],
+                             [191.0,  "Get result from Cloud Unit storage"],
+                             [244.0,  "Multiple URLs to Azure ServiceBus Queue"],
+                             [393.0,  "Deploy another Instance on the Cloud Unit"],
+                             [452.0,  "SSH into new Instance for debugging purpose"]
+                          ]
+                        });
+                      });
+                    </script>
+                </div>
+            </div>
+        </section>
