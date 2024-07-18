@@ -2,7 +2,7 @@
 
 echo "Building Webpages:"
 
-echo -e 'index\nproducts\nsoftware\ncloud-integration\nabout\ncontact\norder\njourney\ntechnical-specifications\nwelcome\ndatacenters\nhowto\nblog' | while read PAGE
+echo -e 'index\ncloud-plugin\ncloud-unit\ngreen-datacenter-bonds\ncontact\norder\njourney\ntechnical-specifications\nwelcome\ndatacenters\nhowto\nblog' | while read PAGE
 do
   echo "  $PAGE-content.html > docs/$PAGE.html"
 
