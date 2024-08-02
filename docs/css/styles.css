@@ -10927,44 +10927,12 @@ hr.divider-light {
 }
 
 /* Jacques adjustment header */
-header.jachead {
+header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   #background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/portfolio/test_render2.jpg");
   background-color: #4f4d4d;
   background: radial-gradient(circle, #4f4d4d, #1f1d4d);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-header.jachead h1, header.jachead .h1 {
-  font-size: 2.25rem;
-}
-@media (min-width: 992px) {
-  header.jachead {
-    height: 100vh;
-    min-height: 40rem;
-    padding-top: 4.5rem;
-    padding-bottom: 0;
-  }
-  header.jachead p {
-    font-size: 1.15rem;
-  }
-  header.jachead h1, header.jachead .h1 {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 1200px) {
-  header.jachead h1, header.jachead .h1 {
-    font-size: 3.5rem;
-  }
-}
-
-header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/portfolio/test_render2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10989,6 +10957,70 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+header.cloudpluginhead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/images/cloud-plugin.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.cloudpluginhead h1, header.cloudpluginhead .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  header.cloudpluginhead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.cloudpluginhead p {
+    font-size: 1.15rem;
+  }
+  header.cloudpluginhead h1, header.cloudpluginhead .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.cloudpluginhead h1, header.cloudpluginhead .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+header.cloudunithead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/images/cloud-unit-principle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.cloudunithead h1, header.cloudunithead .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  header.cloudunithead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.cloudunithead p {
+    font-size: 1.15rem;
+  }
+  header.cloudunithead h1, header.cloudunithead .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.cloudunithead h1, header.cloudunithead .h1 {
     font-size: 3.5rem;
   }
 }
