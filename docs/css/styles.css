@@ -10961,6 +10961,40 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
+
+header.nextgencloudhead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/images/cloud-plugin.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.nextgencloudhead h1, header.nextgencloudhead .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  header.nextgencloudhead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.nextgencloudhead p {
+    font-size: 1.15rem;
+  }
+  header.nextgencloudhead h1, header.nextgencloudhead .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.nextgencloudhead h1, header.nextgencloudhead .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+
 header.edgecloudhead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
@@ -10970,25 +11004,25 @@ header.edgecloudhead {
   background-attachment: scroll;
   background-size: cover;
 }
-header.cloudpluginhead h1, header.cloudpluginhead .h1 {
+header.edgecloudhead h1, header.edgecloudhead .h1 {
   font-size: 2.25rem;
 }
 @media (min-width: 992px) {
-  header.cloudpluginhead {
+  header.edgecloudhead {
     height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
-  header.cloudpluginhead p {
+  header.edgecloudhead p {
     font-size: 1.15rem;
   }
-  header.cloudpluginhead h1, header.cloudpluginhead .h1 {
+  header.edgecloudhead h1, header.edgecloudhead .h1 {
     font-size: 3rem;
   }
 }
 @media (min-width: 1200px) {
-  header.cloudpluginhead h1, header.cloudpluginhead .h1 {
+  header.edgecloudhead h1, header.edgecloudhead .h1 {
     font-size: 3.5rem;
   }
 }
